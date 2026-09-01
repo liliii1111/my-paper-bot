@@ -20,5 +20,5 @@ jobs:
           pip install requests beautifulsoup4 lxml
       - name: Run Scitify
         run: |
-          cd Scitefy-main/bin
+          cd Scitify-main/bin
           bash run_paper_update.sh
