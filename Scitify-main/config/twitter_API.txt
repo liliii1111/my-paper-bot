@@ -1,0 +1,8 @@
+[DEFAULT]
+bearer_token="xxxxxxxxxx"
+api_key="xxxxxxxxxx"
+api_key_secret="xxxxxxxxxx"
+access_token="xxxxxxxxxx"
+access_token_secret="xxxxxxxxxx"
+
+

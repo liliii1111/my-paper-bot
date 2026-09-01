@@ -1,0 +1,14 @@
+# ========== PubMed 检索设置（核心） ==========
+PubMed_Search_Keywords = ("cancer"[Title/Abstract]) AND ("therapy"[Title/Abstract])
+PubMed_Exclusion_Keywords = review
+PubMed_Required_Keywords = 
+PubMed_Journal_Names = 
+
+# ========== 邮箱推送设置（重点） ==========
+Email_Provider = Other
+SMTP_Server = smtp.163.com
+SMTP_Port = 465
+Use_SSL = True
+Sender_Email = 19833231302@163.com
+Sender_Password = LQvZ834jVe9zjg2M
+Recipient_Email = 19833231302@163.com
