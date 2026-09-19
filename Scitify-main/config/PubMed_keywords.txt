@@ -1,31 +1,16 @@
 [keywords]
-biomolecular condensates
-LLPS
+"multiple myeloma" OR "plasma cell myeloma"
+"BCL-2 inhibitor" OR Lisaftoclax OR APG-2575 OR Venetoclax
+"cell culture" OR "in vitro" OR "cultured cells"
 
 [exclude_keywords]
-
+review
 
 [required_keywords]
 
 [journals_of_interest]
-Nature Chemical Biology
-Science
-Nature
-Cell
-Cell Reports
-Journal of the American Chemical Society
-Elife 
-Nature Cell Biology
-PLOS Biology
-Nature Methods
-Proceedings of the National Academy of Sciences
-Nature Chemistry
-Nature Physics 
-Nature Communications
-Journal of Chemical Physics
-Soft Matter 
-Advanced Materials 
-Journal of Structural Biology
-Biophysical Journal
-
-
+Blood
+Leukemia
+Lancet Haematology
+Clinical Cancer Research
+British Journal of Haematology
