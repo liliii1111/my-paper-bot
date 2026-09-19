@@ -7,7 +7,7 @@ days_bioRxiv=1
 batch_bioRxiv=100
 
 include_PubMed=1
-days_PubMed=1
+days_PubMed=7
 batch_PubMed=100
 email_PubMed=19833231302@163.com
 
