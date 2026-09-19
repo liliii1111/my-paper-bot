@@ -22,9 +22,9 @@ with open(config_path, 'r', encoding='utf-8') as f:
             key, value = line.split('=', 1)
             key = key.strip()
             value = value.strip()
-            if key == 'sender_email': sender_email = str(value)
-            if key == 'sender_password': sender_password = str(value)
-            if key == 'receiver_email': receiver_email = str(value)
+            if key == 'sender_email': sender_email = value
+            if key == 'sender_password': sender_password = value
+            if key == 'receiver_email': receiver_email = value
 
 output_file = os.path.join(os.path.dirname(__file__), '../output/titles_and_urls.txt')
 if not os.path.exists(output_file):
@@ -38,15 +38,14 @@ if not content.strip():
     print("Output file is empty. No email sent.")
     sys.exit(0)
 
-# 强制转为字符串，防止由于读取时的编码差异导致 bytes 类型拼接错误
-sender_email = str(sender_email)
-sender_password = str(sender_password)
-receiver_email = str(receiver_email)
+# 强制转换为干净的字符串
+sender_email = str(sender_email).strip()
+sender_password = str(sender_password).strip()
+receiver_email = str(receiver_email).strip()
 
 smtp_server = 'smtp.163.com'
 smtp_port = 465
 
-# 使用 Header 确保中文主题正确编码，避免 bytes 错误
 msg = MIMEText(content, 'plain', 'utf-8')
 msg['Subject'] = Header('PubMed 文献推送', 'utf-8')
 msg['From'] = sender_email
@@ -54,6 +53,7 @@ msg['To'] = receiver_email
 
 try:
     server = smtplib.SMTP_SSL(smtp_server, smtp_port)
+    server.encoding = 'utf-8'  # 关键修复！让 smtplib 用 UTF-8 解析响应，避免 bytes 拼接错误
     server.login(sender_email, sender_password)
     server.sendmail(sender_email, [receiver_email], msg.as_string())
     server.quit()
