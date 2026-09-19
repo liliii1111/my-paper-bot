@@ -14,6 +14,7 @@ email_PubMed=19833231302@163.com
 send_email=1
 service=Other
 receiver_email=19833231302@163.com
+sender_email=19833231302@163.com
 sender_password=LQvZ834jVe9zjg2M
 
 post_tweet=0
