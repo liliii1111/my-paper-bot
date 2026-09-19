@@ -1,10 +1,8 @@
 [keywords]
-"multiple myeloma" OR "plasma cell myeloma"
-"BCL-2 inhibitor" OR Lisaftoclax OR APG-2575 OR Venetoclax
-"cell culture" OR "in vitro" OR "cultured cells"
+("multiple myeloma" OR "plasma cell myeloma") OR ("BCL-2 inhibitor" OR Lisaftoclax OR APG-2575 OR Venetoclax) OR ("cell culture" OR "in vitro")
 
 [exclude_keywords]
-review
+
 
 [required_keywords]
 
@@ -14,3 +12,4 @@ Leukemia
 Lancet Haematology
 Clinical Cancer Research
 British Journal of Haematology
+Journal of Clinical Oncology
