@@ -17,7 +17,7 @@ jobs:
           python-version: '3.9'
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 lxml biopython keyring
+          pip install requests beautifulsoup4 lxml biopython keyring yagmail
       - name: Run Scitify
         run: |
           cd Scitify-main/bin
