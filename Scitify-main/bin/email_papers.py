@@ -43,7 +43,7 @@ if not content.strip():
 
 try:
     # 使用 yagmail 发信，它会自动处理所有编码和服务器响应问题
-    yag = yagmail.SMTP(user=sender_email, password=sender_password, host='smtp.163.com', port=465, smtp_ssl=True)
+    yag = yagmail.SMTP(user=sender_email, password=sender_password, host='smtp.gmail.com', port=465, smtp_ssl=True)
     yag.send(to=receiver_email, subject='PubMed 文献推送', contents=content)
     print("Email sent successfully!")
 except Exception as e:
