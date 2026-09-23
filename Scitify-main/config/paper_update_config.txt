@@ -9,13 +9,13 @@ batch_bioRxiv=100
 include_PubMed=1
 days_PubMed=7
 batch_PubMed=100
-email_PubMed=19833231302@163.com
+email_PubMed=lixintong0929@gmail.com
 
 send_email=1
 service=Other
-receiver_email=19833231302@163.com
-sender_email=19833231302@163.com
-sender_password=LQvZ834jVe9zjg2M
+receiver_email=lixintong0929@gmail.com
+sender_email=lixintong0929@gmail.com
+sender_password=cbrxbtdmngitpeus
 
 post_tweet=0
 credentials=twitter_credentials
