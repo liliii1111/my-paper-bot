@@ -1,5 +1,5 @@
 [keywords]
-("multiple myeloma" OR "plasma cell myeloma") OR ("BCL-2 inhibitor" OR Lisaftoclax OR APG-2575 OR Venetoclax) OR ("cell culture" OR "in vitro")
+("HFimpEF" OR "Heart Failture") OR ("myocardial infraction" OR cardiomyopathy OR artrial fibrillation OR BNP) OR ("GDMT" OR "pronosis")
 
 [exclude_keywords]
 
@@ -7,9 +7,11 @@
 [required_keywords]
 
 [journals_of_interest]
-Blood
-Leukemia
-Lancet Haematology
-Clinical Cancer Research
-British Journal of Haematology
-Journal of Clinical Oncology
+Circulation
+European Heart Journal
+Journal of the American College of Cardiology
+JACC-Heart Failure
+European Journal of Heart Failure
+Nature Reviews Cardiology
+JAMA Cardiology
+Progress in cardiovascular Diseases
